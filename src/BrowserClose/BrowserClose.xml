@@ -1,0 +1,18 @@
+<widget id="BrowserClose.widget.BrowserClose" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
+    <name>BrowserClose</name>
+    <description>Dummy widget</description>
+    <icon/>
+    <properties>
+      <property key="microflow" type="microflow" required="false" defaultValue="">
+      <caption>Microflow</caption>
+      <category>Behavior</category>
+      <description>The microflow to execute when the user closes the page</description>
+      <returnType type="Void" />
+    </property>
+      <property key="warning" type="boolean" required="true" defaultValue="false">
+      <caption>Close page confirmation?</caption>
+      <category>Behavior</category>
+      <description>Have the user confirm when closing the page?</description>
+    </property>
+    </properties>
+</widget>

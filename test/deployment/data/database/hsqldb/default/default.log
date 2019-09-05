@@ -1,0 +1,41 @@
+/*C2*/SET SCHEMA PUBLIC
+DELETE FROM "mendixsystem$version" WHERE "versionnumber"='4.2'
+INSERT INTO "mendixsystem$version" VALUES('4.2','2019-09-05 14:52:57.908000','3.0.0','unversioned','test')
+COMMIT
+/*C3*/SET SCHEMA PUBLIC
+DELETE FROM "system$userrole" WHERE "id"=4222124650659841
+INSERT INTO "system$userrole" VALUES(4222124650659841,'8dd52bfa-6d7e-453b-b506-303c0a3d9567','','Administrator')
+DELETE FROM "system$userrole" WHERE "id"=4222124650659842
+INSERT INTO "system$userrole" VALUES(4222124650659842,'53f5d6fa-6da9-4a71-b011-454ec052cce8','','User')
+COMMIT
+DELETE FROM "mendixsystem$properties" WHERE "key"='Mendix.Runtime.DeploymentID'
+INSERT INTO "mendixsystem$properties" VALUES('Mendix.Runtime.DeploymentID','637032935510056726')
+COMMIT
+DELETE FROM "system$session" WHERE "id"=4785074604081353
+DELETE FROM "system$session_user" WHERE "system$sessionid"=4785074604081353 AND "system$userid"=562949953421513
+COMMIT
+/*C2*/DELETE FROM "mendixsystem$entityidentifier" WHERE "id"='d4154981-8dac-4150-aec5-efa3ef62a7a2'
+INSERT INTO "mendixsystem$entityidentifier" VALUES('d4154981-8dac-4150-aec5-efa3ef62a7a2',4,401)
+COMMIT
+/*C3*/INSERT INTO "system$xasinstance" VALUES(1125899906842925,'949bd37e-3081-4bba-aaa8-c12dc295ccf7','2019-09-05 22:19:21.513000','2019-09-05 22:19:21.469000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "mendixsystem$entityidentifier" WHERE "id"='282e2e60-88a5-469d-84a5-ba8d9151644f'
+INSERT INTO "mendixsystem$entityidentifier" VALUES('282e2e60-88a5-469d-84a5-ba8d9151644f',2,401)
+COMMIT
+INSERT INTO "system$user" VALUES(562949953421613,'2019-09-05 22:22:16.391000',TRUE,'2019-09-05 22:22:16.391000','2019-09-05 22:22:16.476000',FALSE,TRUE,0,FALSE,'Anonymous_fb5f4f3d-33c8-43f8-a26f-11bdf07a1d27','{BCrypt}$2a$10$gcdcUBtPj.Ly2g3WlsUwk.twFZnvsZ3JoPJfpWJPsdXftqS7CDH/i','System.User',NULL,562949953421613)
+INSERT INTO "system$userroles" VALUES(562949953421613,4222124650659841)
+INSERT INTO "system$user_language" VALUES(562949953421613,6192449487634433)
+COMMIT
+DELETE FROM "system$user" WHERE "id"=562949953421613
+INSERT INTO "system$user" VALUES(562949953421613,'2019-09-05 22:22:16.391000',TRUE,'2019-09-05 22:22:16.391000','2019-09-05 22:22:16.496000',FALSE,TRUE,0,FALSE,'Anonymous_fb5f4f3d-33c8-43f8-a26f-11bdf07a1d27','{BCrypt}$2a$10$gcdcUBtPj.Ly2g3WlsUwk.twFZnvsZ3JoPJfpWJPsdXftqS7CDH/i','System.User',NULL,562949953421613)
+COMMIT
+/*C4*/SET SCHEMA PUBLIC
+DELETE FROM "mendixsystem$entityidentifier" WHERE "id"='37f9fd49-5318-4c63-9a51-f761779b202f'
+INSERT INTO "mendixsystem$entityidentifier" VALUES('37f9fd49-5318-4c63-9a51-f761779b202f',17,401)
+COMMIT
+INSERT INTO "system$session" VALUES(4785074604081453,'a56005fe-41af-4db3-ad7c-f0f57b8ef006','2019-09-05 22:22:16.523000','5f1f126d-7cbd-4c0d-8c81-04ff65e31b7c','2019-09-05 22:22:16.523000','a5fa1630-4a17-47a8-955f-0ce8b5e3b97f')
+INSERT INTO "system$session_user" VALUES(4785074604081453,562949953421613)
+COMMIT
+/*C3*/DELETE FROM "mendixsystem$entityidentifier" WHERE "id"='ac4ba6a8-3516-4939-8aee-f7b7130d32b3'
+INSERT INTO "mendixsystem$entityidentifier" VALUES('ac4ba6a8-3516-4939-8aee-f7b7130d32b3',16,401)
+COMMIT
