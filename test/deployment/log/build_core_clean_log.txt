@@ -1,8 +1,0 @@
-Buildfile: C:\Users\admcn\Documents\GitHub\Browser-Close\test\deployment\build_core.xml
-
-clean:
-
-BUILD SUCCESSFUL
-Total time: 0 seconds
-
-
