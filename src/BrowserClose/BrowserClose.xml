@@ -9,7 +9,7 @@
       <description>The microflow to execute when the user closes the page</description>
       <returnType type="Void" />
     </property>
-      <property key="warning" type="boolean" required="true" defaultValue="false">
+      <property key="warning" type="boolean" required="true" defaultValue="true">
       <caption>Close page confirmation?</caption>
       <category>Behavior</category>
       <description>Have the user confirm when closing the page?</description>
